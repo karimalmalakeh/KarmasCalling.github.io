@@ -59,7 +59,7 @@
  nav ul li {
    margin-inline: 13px;
    margin-block-end: 5px;
-   font-size: 0.6em;
+   font-size: 0.8em;
  }
 
  header nav {
@@ -81,8 +81,6 @@
  }
 
  .mainBorder {
-   container-type: inline-size;
-   container-name: mainBorder;
    border: 5px solid var(--border);
    box-shadow: 5px 5px 0 0 var(--light);
    padding: 10px;
@@ -101,9 +99,10 @@
      block-size: auto;
      border-radius: 5px;
    }
+
    div {
-    text-align: center;
-    padding: 0 10px;
+     text-align: center;
+     padding: 0 10px;
    }
  }
 
@@ -167,7 +166,7 @@
 
      td,
      th {
-       border: 1px solid var(--border);
+       border: 1px solid var(--darkAccent);
        text-align: center;
      }
 
