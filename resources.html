@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Resources</title>
     <link rel="stylesheet" href="./styles/site.css">
-    <link rel="icon" type="image/png" href="./images/hacker.png">
+    <link rel="icon" type="image/png" href="./images/hacker.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="./images/colored-hacker.png" media="(prefers-color-scheme: dark)">
 </head>
 
 <body>
@@ -29,19 +30,72 @@
     </header>
 
     <main>
-        <h3>Please feel free to contact us here for an inquiry on our in-person and online educational courses, designed
-            to help you easily identify and avoid the most common types of scams.</h3>
-        <div id="emailForm">
-            <form id="emailForm" action="/send-email" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Full Name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your Inquiry" rows="5"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+        <section class="emailForm">
+            <h3>Contact us to learn more about our services or to inquire about scams you've encountered. Let us know
+                how we can assist you in staying informed and protected.</h3>
+            <div>
+                <form action="/send-email" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Inquiry" rows="5"></textarea>
+                    <fieldset>
+                        <legend>Select your service type:</legend>
+                        <input type="radio" name="service" id="retrieval">
+                        <label for="retrieval">Lost Valuables Retrieval</label><br>
+                        <input type="radio" name="service" id="class">
+                        <label for="class">Scam Prevention class</label><br>
+                        <input type="radio" name="service" id="both">
+                        <label for="both">Both Services</label>
+                    </fieldset>
+                </fieldset>
+                <label for="classes">Select the type of educational course that best suits your needs:</label>
+                <small>(Only answer if applicable)</small>
+                <select id="classes" name="classes">
+                    <option value="" disabled selected>--Select One--</option>
+                    <option value="basic">Basic Scam Awareness & Prevention</option>
+                    <option value="advanced">Advanced Scam Detection Techniques</option>
+                    <option value="seniors">Online Safety for Seniors</option>
+                    <option value="businesses">Digital Secrity for Businesses</option>
+                    <option value="children">Fraud Prevention for Children & Teens</option>
+                </select>
+                <fieldset>
+                    <label for="scamTopic">What type of scam do you need help with?</label>
+                    <small>(Only answer if applicable)</small>
+                    <select id="scamTopic" name="scamTopic">
+                        <option value="" disabled selected>--Select All That Apply--</option>
+                        <option value="investment">Investment</option>
+                        <option value="crypto">Cryptocurrency</option>
+                        <option value="charity">Fake Charity</option>
+                        <option value="tech">Tech Support</option>
+                        <option value="shopping">Online Shopping</option>
+                        <option value="email">Business Email Compromise</option>
+                        <option value="phishing">Phishing</option>
+                    </select>
+                    <fieldset>
+                        <legend>What additional information are you looking for?</legend>
+                        <input type="checkbox" id="tips" name="information" value="tips">
+                        <label for="tips">Quick Tips</label><br>
+                        <input type="checkbox" id="trends" name="information" value="trends">
+                        <label for="trends">Latest Fraud Trends</label><br>
+                        <input type="checkbox" id="tutorials" name="information" value="tutorials">
+                        <label for="tutorials">Video Tutorials</label><br>
+                        <input type="checkbox" id="downloadableResources" name="information"
+                            value="downloadableResources">
+                        <label for="downloadableResources">Downloadable Resources</label><br>
+                        <input type="checkbox" id="legalResources" name="information" value="legalResources">
+                        <label for="legalResources">Legal Resources</label><br>
+                    </fieldset>
+
+                <div id="action">
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear</button>
+                </div>
+                </form>
+            </div>
+        </section>
 
 
 

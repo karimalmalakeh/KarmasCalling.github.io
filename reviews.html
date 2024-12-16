@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Reviews</title>
     <link rel="stylesheet" href="./styles/site.css">
-    <link rel="icon" type="image/png" href="./images/hacker.png">
+    <link rel="icon" type="image/png" href="./images/hacker.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="./images/colored-hacker.png" media="(prefers-color-scheme: dark)">
 </head>
 
 <body>
@@ -27,7 +28,34 @@
         </nav>
     </header>
     <main>
-        <p>Loading...</p>
+        <section>
+            <h3>What Our Real Customers Have to Say!</h3>
+            <div class="review">
+                <p>Karma's Calling is <strong>THE</strong> master of scam retrieval and prevention. If you need help with any scam
+                    you've encountered
+                    or you want to learn how to prevent falling for these fraudsters, the team here is your best choice for
+                    the job. They really do have incredible reliability and customer service!
+                </p>
+                <p class="customer">Tiger W., San Jose, CA</p>
+            </div>
+            <div class="review">
+                <p>
+                    Their educational classes on scam prevention are filled to the brim with information, and their
+                    teachers are former Stanford professors! I have learned <strong>SO</strong> much here, and I would recommend it to
+                    anyone willing to stay safe!
+                </p>
+                <p class="customer">Reese W., Sunnyvale, CA</p>
+            </div>
+        </section>
+
+        <div class="video">
+            <video controls>
+                <source src="./media/Karmas-Calling-Video.webm" type="video/webm">
+                <source src="./media/Karmas-Calling-Video.ogv" type="video/ogg">
+            </video>
+        </div>
+
+
     </main>
 
     <div id="foot">
