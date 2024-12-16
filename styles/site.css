@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-width: none;
 }
 
 
@@ -56,7 +55,9 @@ h2 {
 
   }
 }
-
+h3 {
+  color: var(--light);
+}
 h3,
 h4 {
   text-align: center;
@@ -164,6 +165,9 @@ small {
 .mobile {
   display: none;
 }
+.desktop {
+  display: inline;
+}
 
 .aboutTable {
   table {
@@ -258,7 +262,7 @@ td:empty {
   gap: 20px;
   padding: 20px;
   background: var(--darkAccent);
-  max-inline-size: 100%;
+  max-inline-size: 50%;
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -369,6 +373,37 @@ video {
   block-size: auto;
   margin-block-end: 10px;
 }
+.staff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+
+  .staffMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      inline-size: 110px;
+      block-size: 110px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  p {
+    margin-block-start: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+  h3 {
+    margin-block-end: 10px;
+  }
+}
+
+
 
 
 @media all and (min-width: 300px) and (max-width: 400px) {
@@ -387,7 +422,7 @@ video {
 
   .welcome {
     a:hover {
-      color: #fff;
+      color: var(--light);
       font-style: italic;
       font-weight: bold;
     }
@@ -425,6 +460,9 @@ video {
 
   .mobile {
     display: inline;
+  }
+  .desktop {
+    display: none;
   }
 
   .logo {
@@ -534,6 +572,9 @@ video {
     background-color: var(--secondaryColor);
     color: var(--primaryColor);
     transition: background-color 0.3s ease;
+    h3 {
+      color: var(--darkAccent);
+    }
   }
 
   #emailForm {
@@ -584,6 +625,23 @@ video {
   .video {
     inline-size: 30%;
   }
+
+  .staff {
+    img {
+      inline-size: 250px!important;
+      block-size: 250px!important;
+      margin-block-start: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      padding-block-start: 7px;
+      padding-block-end: 7px;
+    }
+    h4 {
+      padding-inline-start: 20px;
+      color: var(--light);
+    }
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 868px) {
@@ -606,13 +664,6 @@ video {
     font-size: 0.65em;
   }
 }
-@media (prefers-color-scheme: light) {
-
-
-}
-@media (prefers-color-scheme: dark) {
-
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -623,4 +674,5 @@ video {
     transform: translateY(0);
   }
 }
+
 
