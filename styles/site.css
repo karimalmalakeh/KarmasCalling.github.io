@@ -17,7 +17,7 @@
 }
 
 /* banner */
-.banner {
+#banner {
   background-color: var(--primaryColor);
   text-align: left;
   color: var(--secondaryColor);
@@ -30,7 +30,7 @@
 }
 
 
-.banner div {
+#banner div {
   display: flex;
   flex-direction: column;
 }
@@ -508,7 +508,7 @@ video {
     font-size: 2em;
   }
 
-  .banner {
+  #banner {
     font-size: 0.8em;
   }
 
