@@ -161,6 +161,7 @@ small {
 }
 
 .tag {
+  
   color: var(--secondaryColor);
   text-decoration: none;
 
@@ -385,7 +386,7 @@ td:empty {
 }
 
 video {
-  inline-size: 90%;
+  inline-size: 80%;
   block-size: auto;
   margin-block-end: 10px;
 }
@@ -632,8 +633,22 @@ video {
 
 
   .video {
-    inline-size: 30%;
+    inline-size: 50%;
+    h4 {
+      float: right;
+      
+    }
   }
+  .review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-inline-size: 800px;
+  }
+  .review {
+    padding: 1rem;
+  }
+
 
   .staff {
     img {
