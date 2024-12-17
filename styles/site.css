@@ -260,49 +260,95 @@ td:empty {
   display: none;
 }
 
-form {
-  display: grid;
-  align-items: baseline;
-}
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--darkAccent);
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-input,
-select {
-  block-size: 2em;
-  max-inline-size: fit-content;
-  font-size: 1rem;
-  accent-color: var(--darkAccent);
-}
+  h3 {
+    text-align: center;
+    color: var(--secondaryColor);
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+  }
 
-input:focus,
-select:focus {
-  
-}
-
-input,
-fieldset,
-select {
-  border-radius: 7px;
-}
-
-input[type="radio"],
-input[type="checkbox"],
-input+label {
-  vertical-align: middle;
-}
+  label {
+    display: flex;
+    align-items: center;
+    margin-block-end: 5px;
+    font-weight: bold;
+    color: var(--secondaryColor);
+  }
 
 
+  :is(input, textarea, select) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-block-end: 15px;
+    border: 1px solid var(--darkAccent);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--secondaryColor);
+  }
 
-input:not([type="radio"], [type="checkbox"]),
-fieldset,
-select {
-  margin-block-end: 15px;
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border-color: var(--border);
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+
+    margin: 0;
+    margin-inline-end: 10px;
+    accent-color: var(--border);
+
+  }
+
+  fieldset {
+    border: 1px solid var(--darkAccent);
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+
+
+  legend {
+    font-weight: bold;
+    margin-block-end: 5px;
+    font-size: 12px;
+    color: var(--secondaryColor);
+  }
+
+  button {
+    background-color: var(--border);
+    color: var(--darkAccent);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
 }
 
 #action {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
 }
+
 
 .review {
   margin: 30px;
@@ -552,26 +598,38 @@ video {
     }
   }
 
-  form {
-    grid-template-columns: 130px 1fr;
-    row-gap: 15px;
-    column-gap: 5px;
+  .emailForm {
+    display: grid;
+    max-width: 600px;
+    margin: 40px auto;
+
+    h3 {
+      text-align: center;
+    }
+
+    fieldset {
+      padding: 20px;
+    }
+
+    #action {
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    input,
+    textarea,
+    select {
+      margin-inline-start: 10px;
+      font-size: 18px;
+      grid-column: span 2;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 12px 20px;
+    }
   }
 
-  label {
-    justify-self: end;
-  }
-
-  fieldset,
-  #actions {
-    grid-column-start: 2;
-  }
-
-  input:not([type="radio"], [type="checkbox"]),
-  fieldset,
-  select {
-    margin-block-end: 0px;
-  }
 
   .video {
     inline-size: 30%;
