@@ -17,7 +17,7 @@
 }
 
 /* banner */
-#banner {
+.banner {
   background-color: var(--primaryColor);
   text-align: left;
   color: var(--secondaryColor);
@@ -30,7 +30,7 @@
 }
 
 
-#banner div {
+.banner div {
   display: flex;
   flex-direction: column;
 }
@@ -43,18 +43,18 @@ h2 {
   font-size: 2.6vw;
   margin-block-start: 10px;
 }
+.neonText {
+	text-shadow: -2px -2px 10px var(--darkAccent), 2px 2px 10px var(--darkAccent), 
+	0px 0px 10px var(--border), 0px 0px 20px var(--border), 0px 0px 30px var(--border), 0px 0px 40px var(--border), 0px 0px 50px var(--border);
+
+}
 
 .welcome {
   margin-inline-start: 10px;
   text-align: center;
 
-  h3 {
-    color: var(--light);
-  }
-
   a {
-    color: var(--border);
-
+    color: var(--light);
   }
 }
 
@@ -65,13 +65,15 @@ h3 {
 h3,
 h4 {
   text-align: center;
-  padding: 15px;
+  padding: 15px!important;
 }
+
 
 nav ul {
   flex-direction: column;
   align-items: flex-start;
   list-style-type: none;
+  animation: fadeIn 1.7s ease-in-out;
 }
 
 nav ul li {
@@ -175,7 +177,7 @@ small {
   display: inline;
 }
 
-.aboutTable {
+.table {
   table {
     background-color: var(--secondaryColor);
     color: var(--primaryColor);
@@ -440,7 +442,7 @@ video {
 
 @media all and (min-width: 769px) {
 
-  .welcome {
+  #welcome {
     a:hover {
       color: var(--light);
       font-style: italic;
@@ -506,7 +508,7 @@ video {
     font-size: 2em;
   }
 
-  #banner {
+  .banner {
     font-size: 0.8em;
   }
 
