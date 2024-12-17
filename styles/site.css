@@ -48,6 +48,10 @@ h2 {
 	0px 0px 10px var(--border), 0px 0px 20px var(--border), 0px 0px 30px var(--border), 0px 0px 40px var(--border), 0px 0px 50px var(--border);
 
 }
+.neonBox {
+  box-shadow: 0px 0px 5px var(--darkAccent), inset 0px 0px 5px var(--darkAccent), 
+  0px 0px 20px var(--border), 0px 0px 20px 2px var(--border), inset 0px 0px 20px var(--border), inset 0px 0px 20px 2px var(--border);
+}
 
 .welcome {
   margin-inline-start: 10px;
@@ -393,6 +397,11 @@ video {
   block-size: auto;
   margin-block-end: 10px;
 }
+#video {
+  color: var(--border);
+  font-size: xx-small;
+  padding: 5px;
+}
 
 .staff {
   display: grid;
@@ -639,20 +648,37 @@ video {
 
 
   .video {
-    inline-size: 50%;
-    h4 {
-      float: right;
-      
+    display: flex;
+    justify-content: center;
+    inline-size: 100%;
+
+    video {
+      max-inline-size: 100%;
+      inline-size: 50%;
+      block-size: auto;
     }
+   
   }
-  .review-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .reviewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
-    max-inline-size: 800px;
+    }
+
+  .reviewFlex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    inline-size: 100%;
   }
   .review {
-    padding: 1rem;
+    flex: 1;
+    padding-inline-start: 15px;
+  }
+  .customer {
+    font-size: 1rem;
+    padding-block-start: 15px;
   }
 
 
