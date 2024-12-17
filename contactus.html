@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <section class="emailForm">
+        <section class="form">
             <h3>Contact us to learn more about our services or to inquire about scams you've encountered. Let us know
                 how we can assist you in staying informed and protected.</h3>
             <div>
@@ -50,7 +50,7 @@
                         <textarea id="message" name="message" placeholder="Your Inquiry" rows="5"></textarea>
                     </div>
                     <div>
-                        <fieldset>
+                        <fieldset class="field">
                             <legend>Select your service type:</legend>
                             <div>
                                 <input type="radio" name="service" id="retrieval">
@@ -82,7 +82,7 @@
                     <label for="scamTopic">What type of scam do you need help with?</label>
                     <small>(Only answer if applicable)</small>
                     <select id="scamTopic" name="scamTopic">
-                        <option value="" disabled selected>--Select All That Apply--</option>
+                        <option value="" disabled selected>--Select One--</option>
                         <option value="investment">Investment</option>
                         <option value="crypto">Cryptocurrency</option>
                         <option value="charity">Fake Charity</option>
@@ -93,7 +93,7 @@
                     </select>
                     </div>
                     <div>
-                    <fieldset>
+                    <fieldset class="field">
                         <legend>What additional information are you looking for?</legend>
                         <div>
                         <input type="checkbox" id="tips" name="information" value="tips">
@@ -126,9 +126,6 @@
                 </form>
             </div>
         </section>
-
-
-
     </main>
 
 
