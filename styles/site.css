@@ -70,14 +70,14 @@ h4 {
 }
 
 
-nav ul {
+ ul {
   flex-direction: column;
   align-items: flex-start;
   list-style-type: none;
   
 }
 
-nav ul li {
+ ul li {
   margin-inline: 13px;
   margin-block-end: 5px;
   font-size: 0.8em;
@@ -446,6 +446,34 @@ video {
 #domain {
   font-size: 0.2em;
 }
+.link {
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 10px;
+    align-items: center;
+  }
+
+  ul li::before {
+    background-image: url(../images/colored-hacker.png);
+    inline-size: 15px;
+    background-size: cover;
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    block-size: 15px;
+    
+  }
+
+   h4, h3 {
+    text-align: left;
+  }
+
+  a{
+  color: var(--secondaryColor);
+  }
+}
+
 
 
 
@@ -495,7 +523,7 @@ video {
   }
 
 
-  header nav ul {
+  header ul {
     font-size: 2em;
     display: flex;
     flex-direction: row;
@@ -518,7 +546,7 @@ video {
 
   }
 
-  nav a:hover {
+   a:hover {
     color: var(--light);
   }
 
