@@ -48,10 +48,7 @@ h2 {
 	0px 0px 10px var(--border), 0px 0px 20px var(--border), 0px 0px 30px var(--border), 0px 0px 40px var(--border), 0px 0px 50px var(--border);
 
 }
-.neonBox {
-  box-shadow: 0px 0px 5px var(--darkAccent), inset 0px 0px 5px var(--darkAccent), 
-  0px 0px 20px var(--border), 0px 0px 20px 2px var(--border), inset 0px 0px 20px var(--border), inset 0px 0px 20px 2px var(--border);
-}
+
 
 .welcome {
   margin-inline-start: 10px;
@@ -268,8 +265,9 @@ td:empty {
   display: none;
 }
 
-.form {
+#form {
   display: grid;
+  inline-size: 75%;
   align-items: center;
   gap: 20px;
   padding: 20px;
@@ -294,8 +292,8 @@ td:empty {
   }
 
 
-  :is(input, textarea, select) {
-    inline-size: 100%;
+  :is( textarea, select, input[type="text"], input[type="email"]) {
+   inline-size: 100%;
     box-sizing: border-box;
     padding: 10px;
     margin-block-end: 15px;
@@ -314,14 +312,11 @@ td:empty {
 
   input[type="checkbox"] + label,
   input[type="radio"] + label {
-    display: inline-block;
     padding-block-start: 0;
     margin-block-start: 0;
+    padding-inline-start: 10px;
   }
-  input[type="radio"] {
-    margin-inline-start: 0.6em;
-    margin-inline-end: 0;
-  }
+
 
   fieldset {
     border: 1px solid var(--darkAccent);
@@ -330,6 +325,9 @@ td:empty {
     max-inline-size: 600px;
     border-radius: 8px;
     margin-block-end: 15px;
+    div {
+      display: flex;
+    }
   }
 
   legend {
@@ -354,13 +352,11 @@ td:empty {
     color: var(--secondaryColor);
   }
 
-.field {
-  margin: 0 0;
-  padding: 1em 2em;
-  border: 1px solid var(--dark);
-  border-radius: 6px;
+.fielset {
+  border: 1px solid var(--darkAccent);
+  border-radius: 8px;
   inline-size: 100%;
-  max-inline-size: 500px;
+  max-inline-size: 600px;
 }
 }
 
