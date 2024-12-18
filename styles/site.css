@@ -490,6 +490,26 @@ video {
     block-size: 30%;
   }
 }
+@media all and (min-width: 768px) and (max-width: 868px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    margin-block-start: 0.5em;
+    font-size: 1.4em
+  }
+
+  .logo {
+    block-size: 70px;
+    inline-size: auto;
+  }
+
+  nav ul li {
+    white-space: nowrap;
+    font-size: 0.65em;
+  }
+}
 
 @media all and (min-width: 769px) {
 
@@ -705,27 +725,6 @@ video {
       padding-inline-start: 20px;
       color: var(--light);
     }
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 868px) {
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    margin-block-start: 0.5em;
-    font-size: 1.4em
-  }
-
-  .logo {
-    block-size: 70px;
-    inline-size: auto;
-  }
-
-  nav ul li {
-    white-space: nowrap;
-    font-size: 0.65em;
   }
 }
 
