@@ -43,9 +43,10 @@ h2 {
   font-size: 2.6vw;
   margin-block-start: 10px;
 }
+
 .neonText {
-	text-shadow: -2px -2px 10px var(--darkAccent), 2px 2px 10px var(--darkAccent), 
-	0px 0px 10px var(--border), 0px 0px 20px var(--border), 0px 0px 30px var(--border), 0px 0px 40px var(--border), 0px 0px 50px var(--border);
+  text-shadow: -2px -2px 10px var(--darkAccent), 2px 2px 10px var(--darkAccent),
+    0px 0px 10px var(--border), 0px 0px 20px var(--border), 0px 0px 30px var(--border), 0px 0px 40px var(--border), 0px 0px 50px var(--border);
 
 }
 
@@ -66,18 +67,18 @@ h3 {
 h3,
 h4 {
   text-align: center;
-  padding: 15px!important;
+  padding: 15px !important;
 }
 
 
- ul {
+ul {
   flex-direction: column;
   align-items: flex-start;
   list-style-type: none;
-  
+
 }
 
- ul li {
+ul li {
   margin-inline: 13px;
   margin-block-end: 5px;
   font-size: 0.8em;
@@ -165,7 +166,7 @@ small {
 }
 
 .tag {
-  
+
   color: var(--secondaryColor);
   text-decoration: none;
 
@@ -292,8 +293,8 @@ td:empty {
   }
 
 
-  :is( textarea, select, input[type="text"], input[type="email"]) {
-   inline-size: 100%;
+  :is(textarea, select, input[type="text"], input[type="email"]) {
+    inline-size: 100%;
     box-sizing: border-box;
     padding: 10px;
     margin-block-end: 15px;
@@ -304,14 +305,14 @@ td:empty {
   }
 
   :is(input:focus,
-  textarea:focus,
-  select:focus) {
+    textarea:focus,
+    select:focus) {
     outline: none;
     border-color: var(--border);
   }
 
-  input[type="checkbox"] + label,
-  input[type="radio"] + label {
+  input[type="checkbox"]+label,
+  input[type="radio"]+label {
     padding-block-start: 0;
     margin-block-start: 0;
     padding-inline-start: 10px;
@@ -325,6 +326,7 @@ td:empty {
     max-inline-size: 600px;
     border-radius: 8px;
     margin-block-end: 15px;
+
     div {
       display: flex;
     }
@@ -345,19 +347,20 @@ td:empty {
     border-radius: 5px;
     font-size: 16px;
   }
-  small{
+
+  small {
     margin-block-end: 20px;
     display: block;
     font-size: 0.9em;
     color: var(--secondaryColor);
   }
 
-.fielset {
-  border: 1px solid var(--darkAccent);
-  border-radius: 8px;
-  inline-size: 100%;
-  max-inline-size: 600px;
-}
+  .fielset {
+    border: 1px solid var(--darkAccent);
+    border-radius: 8px;
+    inline-size: 100%;
+    max-inline-size: 600px;
+  }
 }
 
 #action {
@@ -406,6 +409,7 @@ video {
   block-size: auto;
   margin-block-end: 10px;
 }
+
 #video {
   color: var(--border);
   font-size: xx-small;
@@ -443,10 +447,12 @@ video {
     margin-block-end: 10px;
   }
 }
+
 #domain {
   font-size: 0.2em;
   padding-block-start: 10px;
 }
+
 .link {
 
   ul {
@@ -463,15 +469,16 @@ video {
     margin-right: 10px;
     display: inline-block;
     block-size: 15px;
-    
+
   }
 
-   h4, h3 {
+  h4,
+  h3 {
     text-align: left;
   }
 
-  a{
-  color: var(--secondaryColor);
+  a {
+    color: var(--secondaryColor);
   }
 }
 
@@ -490,6 +497,7 @@ video {
     block-size: 30%;
   }
 }
+
 @media all and (min-width: 768px) and (max-width: 868px) {
   h1 {
     font-size: 1.8em;
@@ -567,7 +575,7 @@ video {
 
   }
 
-   a:hover {
+  a:hover {
     color: var(--light);
   }
 
@@ -672,7 +680,7 @@ video {
     }
   }
 
-  
+
   .video {
     display: flex;
     justify-content: center;
@@ -683,14 +691,15 @@ video {
       inline-size: 50%;
       block-size: auto;
     }
-   
+
   }
+
   .reviewContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    }
+  }
 
   .reviewFlex {
     display: flex;
@@ -698,10 +707,12 @@ video {
     gap: 1rem;
     inline-size: 100%;
   }
+
   .review {
     flex: 1;
     padding-inline-start: 15px;
   }
+
   .customer {
     font-size: 1rem;
     padding-block-start: 15px;
