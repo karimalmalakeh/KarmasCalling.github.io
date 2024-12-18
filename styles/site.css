@@ -445,6 +445,7 @@ video {
 }
 #domain {
   font-size: 0.2em;
+  padding-block-start: 10px;
 }
 .link {
 
